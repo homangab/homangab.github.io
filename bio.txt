@@ -1,0 +1,3 @@
+I dated quantum computing for a summer, had a brief fling with fuzzy logic during the following semester, 
+got intimately involved with cognitive science/ HCI, had an illicit affair with recommender systems and reinforcement learning, 
+before finally marrying deep reinforcement learning for robotics in the summer of 2018. 
