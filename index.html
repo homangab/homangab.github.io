@@ -303,6 +303,45 @@
                 <p>A Hierarchical Multi-Task Learning model can leverage several auxiliary tasks like detection of container properties to overcome the limitation of insufficient visual cues for drinks, while predicting the healthiness of drinks from their images</p>
             </td>
           </tr>
+		
+		
+		
+		
+		    <tr onmouseout="loss_stop()" onmouseover="loss_start()" >
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='loss_image'><img src='pics/ZSL.png'></div>
+              <img src='pics/drink.png'>
+              </div>
+              <script type="text/javascript">
+                function loss_start() {
+                  document.getElementById('loss_image').style.opacity = "1";
+                }
+
+                function loss_stop() {
+                  document.getElementById('loss_image').style.opacity = "0";
+                }
+                loss_stop()
+              </script>
+            </td>
+            <td valign="middle" width="75%">
+              <p>
+                <a href="papers/ZSL.pdf">
+                  <papertitle>A Generative Framework for Zero Shot Learning with Adversarial Domain Adaptation</papertitle>
+                </a>
+                <br>
+                   <a href="http://home.iitk.ac.in/~varun/">Varun Khare</a>,
+		      <a href="https://www.cse.iitk.ac.in/users/divyatm/">Divyat Mahajan</a>,		      
+                    <strong>Homanga Bharadhwaj</strong>,
+		      <a href="https://www.cse.iitk.ac.in/users/vkverma/">Vinay Verma</a>,
+                     <a href="https://www.cse.iitk.ac.in/users/piyush/">Piyush Rai</a>
+                <br>
+                <em>preprint</em>
+                <br>
+                  <p></p>
+                <p>Adversarial Domain Adaptation appropriately incorporated in a Generative Zero Shot Learning model can help minimize domain shift and significantly enhance generalization on the unseen test classes</p>
+            </td>
+          </tr>
 
             </table>
 	
