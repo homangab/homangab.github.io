@@ -137,7 +137,7 @@
               <heading>News</heading>
               <p>
 					 <ul>
-						 <li> Our paper on <a href="https://arxiv.org/abs/1906.03038"Zero-Shot Learning</a> got accepted at <a href="https://wacv20.wacv.net/"WACV 2020</a> </li>
+						 <li> Our paper on <a href="https://arxiv.org/abs/1906.03038">Zero-Shot Learning</a> got accepted at <a href="https://wacv20.wacv.net/">WACV 2020</a> </li>
 						 <li> Thrilled to be a recipient of the <a href="https://vectorinstitute.ai/aimasters/"> Vector AI Scholarship </a>! </li>
 						 <li> My paper on exploration/curiosity in the web got accepted at <a href="https://websci19.webscience.org/"> ACM WebSci 2019! </a> </li>
 					  <li>I will be working at <a href = "https://www.bloomberg.com/news/articles/2018-05-16/this-2-billion-ai-startup-aims-to-teach-factory-robots-to-think">Preferred Networks Tokyo </a> as a research intern from July to September 2019</li>
@@ -168,13 +168,50 @@
         </table>
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+		
+		<tr onmouseout="unprocessing_stop()" onmouseover="unprocessing_start()">
+            <td width="30%">
+              <div class="one">
+                <!-- <div class="two" id='unprocessing_image'><img src='pics/icra1.png'></div> -->
+                <div class="two" id='motionblur_image'><img src='pics/icra.png'></div>
+                <img src='pics/icra.png'>
+                <img src=''>
+              </div>
+              <script type="text/javascript">
+                function unprocessing_start() {
+                  document.getElementById('unprocessing_image').style.opacity = "1";
+                }
+
+                function unprocessing_stop() {
+                  document.getElementById('unprocessing_image').style.opacity = "0";
+                }
+                unprocessing_stop()
+              </script>
+            </td>
+            <td valign="middle" width="70%">
+              <a href="papers/ICRAMila.pdf">
+                <papertitle>MANGA: Model-agnostic Neural Policy Generalization and Adaptation</papertitle>
+              </a>
+              <br>
+              <strong>Homanga Bharadhwaj</strong>,
+              <a href="https://scholar.google.com/citations?user=YuBhA1wAAAAJ&hl=en">Shoichiro Yamaguchi</a>,
+              <a href="https://maeyon.github.io/">Shin-ichi Maeda</a>
+              <br>
+               <em>ICRA</em>, 2020 (Under review; Pre-print coming up soon!) &nbsp 
+              <br>
+             <!--  <a href="http://timothybrooks.com/tech/unprocessing/">project page</a>
+              <p></p> -->
+              <p>Training dynamics conditioned policies on dynamics randomized environments and estimating dynamics parameters from off-policy data can help achieve zero-shot adaptation in an unseen test environment</p>
+            </td>
+          </tr>
+
 
           <tr onmouseout="unprocessing_stop()" onmouseover="unprocessing_start()">
             <td width="30%">
               <div class="one">
                 <!-- <div class="two" id='unprocessing_image'><img src='pics/icra1.png'></div> -->
                 <div class="two" id='motionblur_image'><img src='pics/icra.png'></div>
-                <img src='pics/icra.png'>
+                <img src='pics/icra2020.png'>
                 <img src=''>
               </div>
               <script type="text/javascript">
@@ -338,7 +375,7 @@
 		      <a href="https://www.cse.iitk.ac.in/users/vkverma/">VK Verma</a>,
                      <a href="https://www.cse.iitk.ac.in/users/piyush/">Piyush Rai</a>
                 <br>
-                <em>preprint</em>
+                <em>WACV</em>, 2020 &nbsp
                 <br>
                   <p></p>
                 <p>Adversarial Domain Adaptation appropriately incorporated in a Generative Zero Shot Learning model can help minimize domain shift and significantly enhance generalization on the unseen test classes</p>
