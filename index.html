@@ -173,6 +173,45 @@
             <td width="25%">
               <div class="one">
                 <!-- <div class="two" id='unprocessing_image'><img src='pics/icra1.png'></div> -->
+                <div class="two" id='motionblur_image'><img src='pics/dibs.png'></div>
+                <img src='pics/dibs.png'>
+                 </div>
+              <script type="text/javascript">
+                function unprocessing_start() {
+                  document.getElementById('unprocessing_image').style.opacity = "1";
+                }
+
+                function unprocessing_stop() {
+                  document.getElementById('unprocessing_image').style.opacity = "0";
+                }
+                unprocessing_stop()
+              </script>
+            </td>
+            <td valign="middle" width="70%">
+              
+                <papertitle>DIBS: Diversity inducing Information Bottleneck in Model Ensembles</papertitle>
+              </a>
+              <br>
+            <a href="https://www.samsinha.me/">Samarth Sinha*</a>,
+              <strong>Homanga Bharadhwaj*</strong>,
+              <a href="https://anirudh9119.github.io/">Anirudh Goyal</a>,
+              <a href="http://info.usherbrooke.ca/hlarochelle/index_en.html">Hugo Larochelle</a>
+		    <a href="https://www.cs.toronto.edu/~garg/">Animesh Garg</a>
+		    <a href="http://www.cs.toronto.edu/~florian/">Florian Shkurti</a>
+              <br>
+               <em>Under double blind review</em> &nbsp 
+              <br>
+             <!--  <a href="http://timothybrooks.com/tech/unprocessing/">project page</a>
+              <p></p> -->
+              <p>Training dynamics conditioned policies on dynamics randomized environments and estimating dynamics parameters from off-policy data can help achieve zero-shot adaptation in an unseen test environment</p>
+            </td>
+          </tr>
+		
+		
+		<tr onmouseout="unprocessing_stop()" onmouseover="unprocessing_start()">
+            <td width="25%">
+              <div class="one">
+                <!-- <div class="two" id='unprocessing_image'><img src='pics/icra1.png'></div> -->
                 <div class="two" id='motionblur_image'><img src='pics/icra2020.png'></div>
                 <img src='pics/icra2020.png'>
                  </div>
@@ -228,8 +267,8 @@
                 <papertitle>A Data-Efficient Framework for Training and Sim-to-Real Transfer of Navigation Policies</papertitle>
               </a>
               <br>
-              <strong>Homanga Bharadhwaj</strong>,
-              <a href="https://scholar.google.com/citations?user=DUdC5DIAAAAJ&hl=en">Zihan Wang</a>,
+              <strong>Homanga Bharadhwaj*</strong>,
+              <a href="https://scholar.google.com/citations?user=DUdC5DIAAAAJ&hl=en">Zihan Wang*</a>,
               <a href="http://www.iro.umontreal.ca/~bengioy/yoshua_en/">Yoshua Bengio</a>,
               <a href="http://liampaull.ca/">Liam Paull</a>
               <br>
