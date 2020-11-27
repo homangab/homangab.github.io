@@ -1,0 +1,58 @@
+----------------------- REVIEW 1 ---------------------
+ SUBMISSION: 41
+ TITLE: Model-Predictive Planning via Cross-Entropy and Gradient-Based Optimization
+ AUTHORS: Homanga Bharadhwaj, Kevin Xie and Florian Shkurti
+ ----------- Novelty -----------
+ The novelty of this paper lies in the combination of cross-entropy method with gradient descent to calculate the control at every time step during model-based reinforcement learning.
+ The authors do a good job providing context to a simple but valuable idea to improve the planning phase of model-based reinforcement learning algorithms. Both recent and older research works are referenced. I can see the combination of gradient-descent with a sampling-based approach contribute to more efficient MBRL algorithms if only it can be adjusted to more complex problems with convergence guarantees.
+ ----------- Technical Correctness -----------
+ The technical part is simple and straightforward. The provided results are preliminary and only hint at the validity of the approach. The gradient is assumed to be known in most cases. How can a poor model approximation affect the method’s efficiency? The OpenAI example aims to answer some of the real-world questions I assume, but it needs significant expansion (e.g. clear description of the goals and parameters of each of the experiments, a figure would help).
+ ----------- Clarity -----------
+ The paper is clear, and to the point. It would be helpful to include the system equations of the “toy environment”, and the update function after soft/hard contacts, no matter how simple.
+ Other than that, I have no complaints on the writing but certainly the experiment can be scaled up to show how this simple change brings value to a large-scale complete MBRL problem (in terms of timing, accuracy, and convergence).
+ ----------- Overall evaluation -----------
+ SCORE: 2 (the paper should be accepted as a poster)
+ ----- TEXT:
+ This paper has just the right amount of information and novel contribution to be featured as a well-received poster.
+
+
+
+ ----------------------- REVIEW 2 ---------------------
+ SUBMISSION: 41
+ TITLE: Model-Predictive Planning via Cross-Entropy and Gradient-Based Optimization
+ AUTHORS: Homanga Bharadhwaj, Kevin Xie and Florian Shkurti
+ ----------- Novelty -----------
+ In this paper, the authors combine Cross-Entropy Methods (CEM) with Gradient Search to propose a model-predictive Planning that (1) tends to avoid the local minima of pure gradient descent; and (2) inefficiency of CEM in high dimensional settings.
+ The idea is novel and interesting. The literature review appears to be complete. The result of this paper could be useful in improving the data inefficiency of Reinforcement Learning approaches.
+ ----------- Technical Correctness -----------
+ The third equation on page 3: the minus sign should be replaced by the plus sign.
+ ----------- Clarity -----------
+ The paper is reasonably easy to follow and has a well-defined structure.
+ ----------- Overall evaluation -----------
+ SCORE: 2 (the paper should be accepted as a poster)
+ ----- TEXT:
+ Overall, I enjoyed reading this paper and I recommend it as a poster
+
+
+ ----------------------- REVIEW 3 ---------------------
+ SUBMISSION: 41
+ TITLE: Model-Predictive Planning via Cross-Entropy and Gradient-Based Optimization
+ AUTHORS: Homanga Bharadhwaj, Kevin Xie and Florian Shkurti
+ ----------- Novelty -----------
+ The authors propose combining Cross-Entropy Method (CEM) (a sampling based method) and gradient descent for model predictive planning in high dimensions. The authors conjecture that CEM performs badly in high dimensions but allows diversity in sampling. While gradient based techniques lead to faster convergence although to local optimals. Hence they propose a technique which attempts to combine both by sampling multiple initial points using CEM and then taking a gradient descent step. This is then used to pick the plan and update the distribution.
+ I believe combining the two is a great idea, I am missing the key novelty. In general gradient descent is performed from multiple random initializations. It seems the only key difference here is sampling from a distribution which can be updated across planning steps.
+ ----------- Technical Correctness -----------
+ The evaluation section compares the proposed technique to just using CEM and just using gradient descent over a range of dimensions and also includes open AI gym environments. I think the evaluation is strong.
+ ----------- Clarity -----------
+ The paper in general is easy to read. And the key concepts have been included. There are some minor errors with notations and representations but can be cleared and corrected in the next version.
+ ----------- Overall evaluation -----------
+ SCORE: 2 (the paper should be accepted as a poster)
+ ----- TEXT:
+ The authors propose combining Cross-Entropy Method (CEM) (a sampling based method) and gradient descent for model predictive planning in high dimensions. The authors conjecture that CEM performs badly in high dimensions but allows diversity in sampling. While gradient based techniques lead to faster convergence although to local optimals. Hence they propose a technique which attempts to combine both by sampling multiple initial points using CEM and then taking a gradient descent step. This is then used to pick the plan and update the distribution.
+ The paper in general is easy to read. And the key concepts have been included. The evaluation section compares the proposed technique to just using CEM and just using gradient descent over a range of dimensions and also includes open AI gym environments.
+ Major concerns -
+ (1)I believe combining the two is a great idea, I am missing the key novelty. In general gradient descent is performed from multiple random initializations. It might be useful to include a discussion as to how this is different from practical implementations of gradient descent from random initializations.
+ Minor concerns -
+ (1) In algorithm 1 - line 3, f, r, \mathcal{D} are not defined or explained in the text.
+ (2) In section 4.2, the authors mentions gradient descent planning makes use of O(D), I am guessing D is the dimension but this hasn't been stated in the text.
+ (3) In section 4.4., "learning dynamics + reward" -> "learning dynamics and reward"
